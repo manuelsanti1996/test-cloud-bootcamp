@@ -12,5 +12,10 @@ def test_1():
     print("test_1")
     return render_template('test-1.html')
 
+@app.route("/my_page")
+def my_page():
+    return render_template('test-1.html')
+
+
 if __name__ == "__main__":
     app.run(debug=True)
